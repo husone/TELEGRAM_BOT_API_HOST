@@ -8,11 +8,9 @@ Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com
 
 ## Add Webhook
 
-```javascript
-const token = process.env.API_KEY;
-const url = process.env.APP_ID;
-const bot = new TelegramBot(TOKEN, { polling: true });
-bot.setWebHook(`${url}/.netlify/functions/update/bot${TOKEN}`);
+Before hosting on netlify, set your bot's webhook first
+```cli
+node setBot
 ```
 
 ## Extending
