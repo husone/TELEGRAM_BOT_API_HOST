@@ -2,6 +2,7 @@ const handleMessage = require("../../../handleMessage");
 
 
 exports.handler = async (event) => {
+    console.log(typeof event)
     console.log(event);
     const { message } = JSON.parse(event.body);
     console.log(message);
