@@ -21,7 +21,6 @@ map.set('ETH','0xB4373ebB073A4DcbA47e567d075a9583Fa3C763e');
 
 bot.on("polling_error", console.log);
 
-
 const handleMessage = async (message) => {
     bot.processUpdate(message.body);
 }
